@@ -220,7 +220,8 @@ def tree_to_code(tree, feature_names, userSymptom, diseaseDays, symptomsDetail):
             #     break
         else:
             print("Enter valid symptom.")
-            return Exception("Enter valid symptom")
+            raise Exception(
+                "Invalid input or data is not available against these symptoms(s)")
 
     while True:
         try:
@@ -229,6 +230,8 @@ def tree_to_code(tree, feature_names, userSymptom, diseaseDays, symptomsDetail):
             break
         except:
             print("Enter number of days.")
+            raise Exception(
+                "Invalid input, please enter correct number of days")
 
     def recurse(node, depth):
         global diseaseDetails
@@ -349,7 +352,8 @@ def getListOfSymptoms(tree, feature_names, userSymptom, diseaseDays):
             #     break
         else:
             print("Enter valid symptom.")
-            return "Enter valid symptom"
+            raise Exception(
+                "Invalid input or data is not available against these symptoms(s)")
 
     while True:
         try:
@@ -358,6 +362,8 @@ def getListOfSymptoms(tree, feature_names, userSymptom, diseaseDays):
             break
         except:
             print("Enter number of days.")
+            raise Exception(
+                "Invalid input, please enter correct number of days")
 
     def recurse(node, depth):
         global symptomsList
@@ -412,11 +418,11 @@ def getDiseaseDetails(symptom, days, symptomsDetail):
     return tree_to_code(clf, cols, symptom, days, symptomsDetail)
 
 
-if __name__ == "__main__":
-    getSeverityDict()
-    getDescription()
-    getprecautionDict()
-    # getInfo()
-    getListOfSymptoms(clf, cols, "stomach", "2")
+# if __name__ == "__main__":
+#     getSeverityDict()
+#     getDescription()
+#     getprecautionDict()
+#     # getInfo()
+#     getListOfSymptoms(clf, cols, "stomach", "2")
 
 # tree_to_code(clf,cols, "stomach", "2")
