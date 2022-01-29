@@ -3,7 +3,7 @@ import SimpleReactFooter from "simple-react-footer";
 const Footer = () => {
   const description =
     "Dr. Bot will help you to diagnose your disease through gathering your symptoms. Additionally it will give you tips about precautionary measure. Recommendation to doctor and tests is also included along with alarming health condition indication.";
-  const title = "DrBot";
+  const title = "Dr. Bot";
   const columns = [
     {
       title: "Resources",
@@ -65,7 +65,7 @@ const Footer = () => {
         instagram=""
         youtube=""
         pinterest=""
-        copyright="2022 DrBot"
+        copyright="2022 Dr. Bot"
         iconColor="white"
         backgroundColor="#274472"
         fontColor="white"

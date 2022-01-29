@@ -15,7 +15,6 @@ def symptom_details(request):
     symptom = data["symptom"]
     days = data["days"]
     print(symptom, days, name)
-    print(type(symptom), days, name)
     symptom = re.sub(' +', " ", symptom.strip())
     try:
         symptomsList = chat_bot.getSymptoms(symptom, int(days))
@@ -28,7 +27,7 @@ def symptom_details(request):
             return Response({"sentDetails": data, "symptomsList": symptomsList})
 
         except:
-            print(type(str(e)))
+            print(str(e))
             return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 
@@ -53,5 +52,5 @@ def disease_details(request):
             return Response(diseaseDetails)
 
         except:
-            print(type(str(e)))
+            print(str(e))
             return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)

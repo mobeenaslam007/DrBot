@@ -14,7 +14,7 @@ function App() {
         // backgroundImage:
         //   "url(https://products.ls.graphics/mesh-gradients/images/61.-Lavender.jpg)",
         backgroundImage:
-          "url(https://i.postimg.cc/B6HSTyh0/1-IRs-Mu32-DQYRma-Vux-QTKEjg.png)",
+          "url(images/background.png)",
         backgroundSize: "cover",
         height: "100%",
         position: "absolute",

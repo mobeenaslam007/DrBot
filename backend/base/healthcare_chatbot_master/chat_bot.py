@@ -334,7 +334,7 @@ def getListOfSymptoms(tree, feature_names, userSymptom, diseaseDays):
         print("Enter the symptom you are experiencing  \n\t\t\t\t\t\t", end="->")
         disease_input = userSymptom
         conf, cnf_dis = check_pattern(chk_dis, disease_input)
-        if conf == 1:
+        if conf == 1 and len(disease_input) >= 4:
             print("searches related to input: ")
             for num, it in enumerate(cnf_dis):
                 print(num, ")", it)
