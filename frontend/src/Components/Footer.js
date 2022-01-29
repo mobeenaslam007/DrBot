@@ -54,23 +54,23 @@ const Footer = () => {
     },
   ];
   return (
-    <div style={{marginTop: "auto"}}>
+    <div style={{ marginTop: "auto" }}>
       <SimpleReactFooter
-      description={description}
-      title={title}
-      columns={columns}
-      linkedin=""
-      facebook=""
-      twitter=""
-      instagram=""
-      youtube=""
-      pinterest=""
-      copyright="2022 DrBot"
-      iconColor="white"
-      backgroundColor="#274472"
-      fontColor="white"
-      copyrightColor="white"
-    />
+        description={description}
+        title={title}
+        columns={columns}
+        linkedin=""
+        facebook=""
+        twitter=""
+        instagram=""
+        youtube=""
+        pinterest=""
+        copyright="2022 DrBot"
+        iconColor="white"
+        backgroundColor="#274472"
+        fontColor="white"
+        copyrightColor="white"
+      />
     </div>
   );
 };

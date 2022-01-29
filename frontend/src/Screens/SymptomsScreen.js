@@ -4,7 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
 import FormContainer from "../Components/FormContainer";
-import ResultScreen from "./ResultScreen";
+import ResultModal from "../Components/ResultModal";
 import Message from "../Components/Message";
 
 const SymptomsScreen = () => {
@@ -181,7 +181,7 @@ const SymptomsScreen = () => {
         </FormContainer>
       </div>
       {showFinalResult && diseaseDetails ? (
-        <ResultScreen
+        <ResultModal
           closeFinalResultModal={closeFinalResultModal}
           diseaseDetails={diseaseDetails}
         />

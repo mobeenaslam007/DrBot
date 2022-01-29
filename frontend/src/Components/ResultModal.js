@@ -1,6 +1,6 @@
 import React from "react";
 
-const ResultScreen = ({ closeFinalResultModal, diseaseDetails }) => {
+const ResultModal = ({ closeFinalResultModal, diseaseDetails }) => {
   console.log(diseaseDetails);
   console.log(diseaseDetails["title"]);
   const onClickHandler = () => closeFinalResultModal();
@@ -65,4 +65,4 @@ const ResultScreen = ({ closeFinalResultModal, diseaseDetails }) => {
   );
 };
 
-export default ResultScreen;
+export default ResultModal;

@@ -221,7 +221,7 @@ def tree_to_code(tree, feature_names, userSymptom, diseaseDays, symptomsDetail):
         else:
             print("Enter valid symptom.")
             raise Exception(
-                "Invalid input or data is not available against these symptoms(s)")
+                "Invalid input or data is not available against these symptom(s)")
 
     while True:
         try:
@@ -353,7 +353,7 @@ def getListOfSymptoms(tree, feature_names, userSymptom, diseaseDays):
         else:
             print("Enter valid symptom.")
             raise Exception(
-                "Invalid input or data is not available against these symptoms(s)")
+                "Invalid input or data is not available against these symptom(s)")
 
     while True:
         try:
